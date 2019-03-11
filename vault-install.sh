@@ -61,7 +61,7 @@ read -p "Press enter to Install vault-operator"
 cd /opt/vaultinstall/banzai-charts
 rm -rf vault-operator/requirements.yaml
 helm install vault-operator --namespace vaultdemo --name vault-operator
-sleep 10
+sleep 20
 kubectl get pods --namespace vaultdemo
 echo "                     "
 echo "- - - - - - - - - - -"
